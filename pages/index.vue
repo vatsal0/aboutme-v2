@@ -4,9 +4,7 @@
 
 	<Experience />
 
-	<v-container fluid style="min-height:100vh" id="education">
-		<h1 class="text-center">Education</h1>
-	</v-container>
+	<Education />
 
 	<v-container fluid style="min-height:100vh" id="projects">
 		<h1 class="text-center">Projects</h1>

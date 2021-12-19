@@ -3,41 +3,33 @@
 		<h1 class="text-center">Experience</h1>
 
 		<div>
-			<template>
-				<v-timeline>
-					<v-timeline-item
-						v-for="(item, i) in items"
-						:key="i"
-						large
-					>
-						<template v-slot:icon>
-							<v-avatar>
-								<img :src="item.img">
-							</v-avatar>
-						</template>
-						
-						<v-card class="elevation-2">
-							<v-card-title class="text-h4 pt-2 pb-0">
-								{{item.title}}
-							</v-card-title>
+			<v-timeline :dense="dense">
+				<v-timeline-item
+					v-for="(item, i) in items"
+					:key="i"
+				>
+					<template v-slot:icon>
+						<v-avatar>
+							<img :src="item.img">
+						</v-avatar>
+					</template>
 
-							<v-card-title class="overline py-0">
-								{{item.time}}
-							</v-card-title>
+					<v-card class="elevation-2">
+						<p class="text-h4 pt-2 pb-0 ml-4">{{item.title}}</p>
+						<p class="overline py-0 ml-4 mb-0">{{item.time}}</p>
 
-							<v-card-text>
-								<v-list-item
-								v-for="(line, i) in item.desc"
-								:key="i">
-									<v-list-item-content>
-										<v-list-item-title class="text-wrap">{{line}}</v-list-item-title>
-									</v-list-item-content>
-								</v-list-item>
-							</v-card-text>
-						</v-card>
-					</v-timeline-item>
-				</v-timeline>
-			</template>
+						<v-card-text class="pt-2">
+							<v-list-item
+							v-for="(line, i) in item.desc"
+							:key="i">
+								<v-list-item-content>
+									<v-list-item-title class="text-wrap">{{line}}</v-list-item-title>
+								</v-list-item-content>
+							</v-list-item>
+						</v-card-text>
+					</v-card>
+				</v-timeline-item>
+			</v-timeline>
 		</div>
 	</v-container>
 </template>
@@ -73,6 +65,17 @@ export default {
 				}
 			]
 		}
+	},
+	computed: {
+		dense () {
+			switch (this.$vuetify.breakpoint.name) {
+				case 'xs': return true
+				case 'sm': return true
+				case 'md': return false
+				case 'lg': return false
+				case 'xl': return false
+			}
+		},
 	}
 }
 </script>
