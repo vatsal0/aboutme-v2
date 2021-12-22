@@ -3,7 +3,7 @@
 		<h1 class="text-center">Experience</h1>
 
 		<div>
-			<v-timeline :dense="dense">
+			<v-timeline :dense="$vuetify.breakpoint.mdAndDown">
 				<v-timeline-item
 					v-for="(item, i) in items"
 					:key="i"
@@ -47,7 +47,7 @@ export default {
 						"Utilizing a web scraper to collect invasive species data from the CABI Invasive Species Compendium.",
 						"Developing a natural language processing model to extract insights related to the economic impact of\
 						invasive species and identify the most prominent economic threats."],
-					img: "https://osc.umd.edu/img/logos/28_informalseal.jpg"
+					img: "/umd.jpeg"
 				},
 				{
 					time: "Sep 2020 - Aug 2021",
@@ -61,21 +61,10 @@ export default {
 					of unused permissions, reducing login time by over 200ms.",
 					"Presented interface in front of managers and senior engineers to receive\
 					feedback for implementing new features and improving user experience."],
-					img: "https://www.logolynx.com/images/logolynx/57/5749ace331ebd85068ef14fcdc115285.jpeg"
+					img: "/bloomberg.jpeg"
 				}
 			]
 		}
-	},
-	computed: {
-		dense () {
-			switch (this.$vuetify.breakpoint.name) {
-				case 'xs': return true
-				case 'sm': return true
-				case 'md': return false
-				case 'lg': return false
-				case 'xl': return false
-			}
-		},
 	}
 }
 </script>

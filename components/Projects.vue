@@ -8,7 +8,7 @@
 				:key="i"
 				dark
 				class="my-4 pa-2 d-flex flex-column justify-space-between mx-md-4 mx-auto"
-				:width="$vuetify.breakpoint.md ? '100%' : '20rem'"
+				:width="$vuetify.breakpoint.mdAndDown ? '100%' : '20rem'"
 			>
 				<div class="text-md-left text-center">
 					<p class="text-h6 font-weight-medium">
@@ -41,11 +41,6 @@ export default {
 	data() {
 		return {
 			items: [
-				{
-					title: "Tutoring website",
-					desc: "soon.",
-					source: "",
-				},
 				{
 					title: "National Park Service Info",
 					desc: "Static Vue.js application for searching and filtering parks from\

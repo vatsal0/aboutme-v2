@@ -7,7 +7,7 @@
 				v-for="(item, i) in items"
 				:key="i"
 				dark
-				class="ma-4 pa-2"
+				class="my-4 pa-2 mx-md-4 mx-auto"
 				max-width="25rem"
 			>
 				<div class="d-flex flex-md-row flex-column-reverse flex-no-wrap text-md-left text-center" style="height: 100%">
@@ -47,7 +47,7 @@ export default {
 				{
 					title: "Capital One Engineering Summit",
 					time: "Jan 2021",
-					img: "https://pbs.twimg.com/profile_images/1455173719027068929/I6ffWyrd_400x400.jpg",
+					img: "/capitalone.jpeg",
 					descType: "Workshops",
 					desc: ["iOS Development",
 					"React.js",
@@ -56,7 +56,7 @@ export default {
 				{
 					title: "University of Maryland",
 					time: "Aug 2021 - Present",
-					img: "https://osc.umd.edu/img/logos/28_informalseal.jpg",
+					img: "/umd.jpeg",
 					descType: "Coursework",
 					desc: ["Object Oriented Programming",
 					"Linear Algebra",
@@ -65,7 +65,7 @@ export default {
 				{
 					title: "Bergen County Academies",
 					time: "Sep 2017 - Jun 2021",
-					img: "https://bca-admissions.bergen.org/images/logo.png",
+					img: "bca.jpeg",
 					descType: "Coursework",
 					desc: ["AP Computer Science",
 					"C & Data Structures",
