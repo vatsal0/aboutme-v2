@@ -6,9 +6,7 @@
 
 	<Education />
 
-	<v-container fluid style="min-height:100vh" id="projects">
-		<h1 class="text-center">Projects</h1>
-	</v-container>
+	<Projects />
 </div>
 </template>
 

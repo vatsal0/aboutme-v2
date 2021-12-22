@@ -8,6 +8,7 @@
 				:key="i"
 				dark
 				class="ma-4 pa-2"
+				max-width="25rem"
 			>
 				<div class="d-flex flex-md-row flex-column-reverse flex-no-wrap text-md-left text-center" style="height: 100%">
 					<div>

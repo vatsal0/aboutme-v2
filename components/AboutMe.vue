@@ -31,6 +31,8 @@
 								v-for="(link, i) in links"
 								:key="i"
 								class="my-2 my-lg-auto d-flex"
+								color="orange lighten-2"
+								text
 							>
 								<v-icon>{{link.icon}}</v-icon>
 								<p
