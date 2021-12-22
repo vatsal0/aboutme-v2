@@ -7,16 +7,13 @@
 				v-for="(item, i) in items"
 				:key="i"
 				dark
-				class="ma-4"
+				class="ma-4 pa-2"
 			>
-				<div class="d-flex flex-no-wrap justify-space-between" style="height: 100%">
+				<div class="d-flex flex-md-row flex-column-reverse flex-no-wrap text-md-left text-center" style="height: 100%">
 					<div>
-						<v-card-title
-							class="text-h5"
-							v-text="item.title"
-						></v-card-title>
+						<p class="text-h5 pa-4 ma-0">{{item.title}}</p>
 
-						<v-card-subtitle class="overline" v-text="item.time"></v-card-subtitle>
+						<v-card-subtitle class="overline pt-0" v-text="item.time"></v-card-subtitle>
 
 						<v-card-text>
 							<p class="text-h6 mb-0">{{item.descType}}:</p>
@@ -30,8 +27,8 @@
 					</div>
 
 					<v-avatar
-						class="my-auto mx-3"
-						size="125"
+						class="my-auto mx-auto"
+						size="10rem"
 					>
 						<v-img :src="item.img"></v-img>
 					</v-avatar>
@@ -46,6 +43,15 @@ export default {
 	data() {
 		return {
 			items: [
+				{
+					title: "Capital One Engineering Summit",
+					time: "Jan 2021",
+					img: "https://pbs.twimg.com/profile_images/1455173719027068929/I6ffWyrd_400x400.jpg",
+					descType: "Workshops",
+					desc: ["iOS Development",
+					"React.js",
+					"Postgres + PgAdmin"]
+				},
 				{
 					title: "University of Maryland",
 					time: "Aug 2021 - Present",
