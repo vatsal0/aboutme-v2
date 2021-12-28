@@ -48,10 +48,24 @@ export default {
 					title: "Capital One Engineering Summit",
 					time: "Jan 2021",
 					img: "/capitalone.jpeg",
-					descType: "Workshops",
+					descType: "Skills",
 					desc: ["iOS Development",
 					"React.js",
 					"Postgres + PgAdmin"]
+				},
+				{
+					title: "Machine Learning (Stanford Online)",
+					time: "Dec 2021",
+					img: "/stanford.jpeg",
+					descType: "Skills",
+					desc: ["Linear Regression",
+					"Logistic Regression",
+					"Neural Networks",
+					"Support Vector Machines",
+					"K-Means Clustering",
+					"Principal Component Analysis",
+					"Collaborative Filtering",
+					"Hyperparameter Optimization"]
 				},
 				{
 					title: "University of Maryland",
