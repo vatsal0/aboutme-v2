@@ -7,7 +7,7 @@
 				v-for="(item, i) in items"
 				:key="i"
 				dark
-				class="my-4 py-4 d-flex flex-column justify-space-between mx-md-4 mx-8"
+				class="my-4 py-4 d-flex flex-column justify-space-between mx-md-4 mx-auto"
 				:width="$vuetify.breakpoint.mdAndDown ? '100%' : '20rem'"
 			>
 				<div class="text-md-left text-center px-4">
