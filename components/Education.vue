@@ -72,9 +72,14 @@ export default {
 					time: "Aug 2021 - Present",
 					img: "https://media.licdn.com/dms/image/C560BAQHrhLnmmZTGjQ/company-logo_200_200/0/1519856141972?e=1689811200&v=beta&t=eeCMS3LCo40aKQaOjDRFY4YoEle37OY4v0VUtISNj_o",
 					descType: "Coursework",
-					desc: ["Object Oriented Programming",
-					"Linear Algebra",
-					"Harvesting Big Data"]
+					desc: [
+					"Harvesting Big Data",
+          "Intro to Financial Markets & Data",
+          "Applied Probability & Statistics",
+          "Portfolio Management",
+          "Data Science",
+          "Advanced Data Structures"
+        ]
 				},
 				{
 					title: "Bergen County Academies",
