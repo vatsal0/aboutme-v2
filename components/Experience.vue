@@ -39,30 +39,92 @@ export default {
 	data() {
 		return {
 			items: [
-				{
-					time: "Nov 2021 - Present",
-					title: "Research Assistant",
-					place: "University of Maryland",
-					desc: ["Working under Dr. Lars Olson in the Department of Agriculture and Resource Economics.",
-						"Utilizing a web scraper to collect invasive species data from the CABI Invasive Species Compendium.",
-						"Developing a natural language processing model to extract insights related to the economic impact of\
-						invasive species and identify the most prominent economic threats."],
-					img: "/umd.jpeg"
-				},
-				{
-					time: "Sep 2020 - Aug 2021",
-					title: "Software Engineer Intern",
-					place: "Bloomberg LP",
-					desc: ["Developed a RESTful service using Java and Spring Framework to\
-					manage over 900 permissions and settings used by the Bloomberg Law web application.",
-					"Created a responsive and dynamic interface with Vue.js, GraphQL, and\
-					Ruby on Rails to communicate with the Java service via HTTP requests.",
-					"Provided analytics allowing managers to recognize and remove hundreds\
-					of unused permissions, reducing login time by over 200ms.",
-					"Presented interface in front of managers and senior engineers to receive\
-					feedback for implementing new features and improving user experience."],
-					img: "/bloomberg.jpeg"
-				}
+        {
+          time: "Feb 2023 - Present",
+          title: "Research Assistant",
+          place: "University of Maryland",
+          desc: ["Working with Dr. Serhiy Kozak and Dr. Shri Santosh on a machine learning options pricing model",
+            "Inferring Black-Scholes implied volatility of at-the-money call options with linear interpolation",
+            "Fitting implied vol as a function of expected return with post-lasso OLS regression on Laguerre polynomials"],
+          img: "https://media.licdn.com/dms/image/C560BAQHrhLnmmZTGjQ/company-logo_100_100/0/1519856141972?e=1689811200&v=beta&t=qRxRYxW3xkXjjt7yrsHYqCrR-jS8Fd8jPFdXa9eRS0k",
+        },
+        {
+          time: "Sep 2022 - Dec 2022",
+          title: "Research Assistant",
+          place: "University of Maryland",
+          desc: ["Worked with Dr. Alec Solway at the Computational Cognitive Neuroscience & Psychiatry Lab",
+            "Developed machine learning classifiers to analyze electroencephalography data and study the process of human decision making",
+            "Achieved 80% accuracy in predicting patient response from EEG data with a convolutional neural network"],
+            img: "https://media.licdn.com/dms/image/C560BAQHrhLnmmZTGjQ/company-logo_100_100/0/1519856141972?e=1689811200&v=beta&t=qRxRYxW3xkXjjt7yrsHYqCrR-jS8Fd8jPFdXa9eRS0k",
+        },
+        {
+          time: "May 2022 - Aug 2022",
+          title: "Software Engineer Intern",
+          place: "Bloomberg LP",
+          desc: ["Designed workflow in Apache Airflow to optimize calculation of 72 indicators for >3 million fixed-income securities at market close",
+            "Parallelized execution workload across 5 remote Linux host machines",
+            "Reduced market snapshot calculation runtime by 35%",
+            "Implemented dynamic error handling and recalculation workflow to minimize failure rate"],
+          img: "https://media.licdn.com/dms/image/C4D0BAQF0uyE7RGKDGg/company-logo_100_100/0/1531146047122?e=1689811200&v=beta&t=UmRJ4r7O6dXTWTcXogT1JbEdjBX4qaArdcewsZinFOA",
+        },
+        {
+          time: "Feb 2022 - Dec 2022",
+          title: "Investment Analyst",
+          place: "TAMID Group @ UMD",
+          desc: ["Conducted market research and analysis on TAMID's ~$10,000 investment portfolio",
+            "Curated 3 stock pitches for potential new investments"],
+          img: "https://media.licdn.com/dms/image/C560BAQHQaYiTbnfxaw/company-logo_200_200/0/1656828321908?e=2147483647&v=beta&t=IRSDFindouuSvQadaOFGbONwE5D4f0NS2lWrntxH034",
+        },
+        {
+          time: "Jan 2022 - Dec 2022",
+          title: "Content Team Lead",
+          place: "International Economics and Finance Society @ UMD",
+          desc: ["Prepared educational presentations on economics and finance topics for 200+ club members"],
+          img: "https://media.licdn.com/dms/image/C560BAQHCCUZeb_eMHA/company-logo_100_100/0/1519904563700?e=1689811200&v=beta&t=ZSeOMXn9JxCfdxWIQO9VDwAKE7BDcVGrUf3Qt9kxLPY",
+        },
+        {
+          time: "Jan 2022 - May 2022",
+          title: "Software Engineer Intern",
+          place: "Capital One",
+          desc: ["Developed React dashboard to monitor transcripts for ~7 million calls/wk",
+            "Deployed Docker images of sentiment analysis and classification models",
+            "Visualized data with Python Dash to display insights on call center trends and customer satisfaction"],
+          img: "https://media.licdn.com/dms/image/C560BAQF0OgQyRZ9yAA/company-logo_100_100/0/1635782717682?e=1689811200&v=beta&t=R-mDeUj505i5IRhK3ZxW4Hi_CwcD2rH-Xp5I9SWNQpU",
+        },
+        {
+          time: "Dec 2021 - May 2022",
+          title: "Research Assistant",
+          place: "University of Maryland",
+          desc: ["Worked with Dr. Lars Olson in the Department of Agriculture and Resource Economics",
+            "Wrote a web scraper to collect invasive species data from the CABI Invasive Species Compendium",
+            "Developed NLP model to infer economic impact of invasive species and classify prominent threats",
+            "Achieved >90% accuracy in detecting phrases related to economic impact"],
+          img: "https://media.licdn.com/dms/image/C560BAQHrhLnmmZTGjQ/company-logo_100_100/0/1519856141972?e=1689811200&v=beta&t=qRxRYxW3xkXjjt7yrsHYqCrR-jS8Fd8jPFdXa9eRS0k",
+        },
+        {
+          time: "Nov 2021 - May 2022",
+          title: "Technical Lead",
+          place: "Google Developer Student Club @ UMD",
+          desc: ["Organized educational workshops teaching Google Cloud, Android, and Firebase"],
+          img: "https://media.licdn.com/dms/image/C4E0BAQE_1tNZKj3sNQ/company-logo_100_100/0/1617607397103?e=1689811200&v=beta&t=uOHN_IeYQauhK3TnwnIYhAThpVCNJzmdIF91Z9QDyn0",
+        },
+        {
+          time: "Oct 2021 - May 2022",
+          title: "Vice President",
+          place: "Student Life Council @ UMD",
+          desc: ["Managed $7,000 budget to plan events for over 1,000 students in the University Honors program",
+            "Coordinated with 10 other council members to handle  logistics and increase student involvement"],
+            img: "https://media.licdn.com/dms/image/C560BAQHrhLnmmZTGjQ/company-logo_100_100/0/1519856141972?e=1689811200&v=beta&t=qRxRYxW3xkXjjt7yrsHYqCrR-jS8Fd8jPFdXa9eRS0k",
+        },
+        {
+          time: "Sep 2020 - Aug 2021 ",
+          title: "Software Engineer Intern",
+          place: "Bloomberg LP",
+          desc: ["Developed Java Spring REST API to create, read, update, and delete Bloomberg Law permissions",
+            "Designed Rails + Vue.js dashboard to provide analytics on permission usage",
+            "Reduced Bloomberg Law login time by >200ms through removing 300+ deprecated permissions"],
+          img: "https://media.licdn.com/dms/image/C4D0BAQF0uyE7RGKDGg/company-logo_100_100/0/1531146047122?e=1689811200&v=beta&t=UmRJ4r7O6dXTWTcXogT1JbEdjBX4qaArdcewsZinFOA",
+        },
 			]
 		}
 	}

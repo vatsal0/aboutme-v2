@@ -47,7 +47,7 @@ export default {
 				{
 					title: "Capital One Engineering Summit",
 					time: "Jan 2021",
-					img: "/capitalone.jpeg",
+					img: "https://media.licdn.com/dms/image/C560BAQF0OgQyRZ9yAA/company-logo_200_200/0/1635782717682?e=1689811200&v=beta&t=vCzZLfWHxKAzN2pBQK4TwwM6MzRs3QCvkgYvasPUDXw",
 					descType: "Skills",
 					desc: ["iOS Development",
 					"React.js",
@@ -56,7 +56,7 @@ export default {
 				{
 					title: "Machine Learning (Stanford Online)",
 					time: "Dec 2021",
-					img: "/stanford.jpeg",
+					img: "https://media.licdn.com/dms/image/C4D0BAQE5MTWc9Bgf0g/company-logo_200_200/0/1582306984947?e=1689811200&v=beta&t=r5EvoS3MD3JvFv_k3BSNhNkaVoahl3Qz0h5fmXWspYQ",
 					descType: "Skills",
 					desc: ["Linear Regression",
 					"Logistic Regression",
@@ -70,7 +70,7 @@ export default {
 				{
 					title: "University of Maryland",
 					time: "Aug 2021 - Present",
-					img: "/umd.jpeg",
+					img: "https://media.licdn.com/dms/image/C560BAQHrhLnmmZTGjQ/company-logo_200_200/0/1519856141972?e=1689811200&v=beta&t=eeCMS3LCo40aKQaOjDRFY4YoEle37OY4v0VUtISNj_o",
 					descType: "Coursework",
 					desc: ["Object Oriented Programming",
 					"Linear Algebra",
@@ -79,7 +79,7 @@ export default {
 				{
 					title: "Bergen County Academies",
 					time: "Sep 2017 - Jun 2021",
-					img: "bca.jpeg",
+					img: "https://media.licdn.com/dms/image/C4D0BAQGliYezbak3eg/company-logo_200_200/0/1519856877466?e=1689811200&v=beta&t=-6WC4VSHDZMKgQDgaeoxWRsvzeJLIU3oIn-QhOUu-e4",
 					descType: "Coursework",
 					desc: ["AP Computer Science",
 					"C & Data Structures",

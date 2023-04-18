@@ -32,7 +32,7 @@
           exact
         >
           <v-list-item-action>
-            <v-icon color="orange lighten-2">{{ item.icon }}</v-icon>
+            <v-icon color="accent">{{ item.icon }}</v-icon>
           </v-list-item-action>
 
           <v-list-item-content>

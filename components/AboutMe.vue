@@ -11,11 +11,9 @@
 						Welcome to my page!
 					</v-card-title>
 
-					<v-card-text class="text-center">
-						<p>I'm an undergraduate computer science student interested in machine learning and finance. Currently, I am a freshman at the University of Maryland. You can view my resume <a
-								href="resume.pdf"
-								target="_blank"
-							>here</a>.</p>
+					<v-card-text class="text-center px-16">
+						<p>I'm an undergraduate computer science student interested in machine learning and finance. 
+              Currently, I am a {{grade}} at the University of Maryland.</p>
 						
 						<p>
 							Click on the links on the sidebar to learn more about me!
@@ -31,7 +29,7 @@
 								v-for="(link, i) in links"
 								:key="i"
 								class="my-2 my-lg-auto d-flex"
-								color="orange lighten-2"
+								color="accent"
 								text
 							>
 								<v-icon>{{link.icon}}</v-icon>
@@ -51,6 +49,7 @@
 export default {
 	data () {
     return {
+      grade: ['freshman', 'sophomore', 'junior', 'senior'][(new Date(Date.now() - new Date('2021/08/30')).getFullYear() - 1970) % 4],
       links: [
         {
           icon: 'mdi-email',

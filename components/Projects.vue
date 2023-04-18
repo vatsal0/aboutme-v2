@@ -7,10 +7,10 @@
 				v-for="(item, i) in items"
 				:key="i"
 				dark
-				class="my-4 pa-2 d-flex flex-column justify-space-between mx-md-4 mx-auto"
+				class="my-4 py-4 d-flex flex-column justify-space-between mx-md-4 mx-8"
 				:width="$vuetify.breakpoint.mdAndDown ? '100%' : '20rem'"
 			>
-				<div class="text-md-left text-center">
+				<div class="text-md-left text-center px-4">
 					<p class="text-h6 font-weight-medium">
 						{{item.title}}
 					</p>
@@ -24,9 +24,9 @@
 					<v-btn 
 						:href="item.source"
 						target="_blank"
-						color="orange lighten-2"
+						color="accent"
 						text
-						class="mx-md-0 mx-auto"
+						class="mx-md-2 mx-auto"
 					>
 						Source Code
 					</v-btn>
@@ -42,16 +42,9 @@ export default {
 		return {
 			items: [
 				{
-					title: "National Park Service Info",
-					desc: "Static Vue.js application for searching and filtering parks from\
-					the National Park Service API based on tourist activities.",
-					source: "https://github.com/vatsal0/national-parks",
-				},
-				{
-					title: "Plannet",
-					desc: "Node.js and jQuery application enabling groups of friends to\
-					efficiently plan hangouts together.",
-					source: "https://github.com/vatsal0/Plannet",
+					title: "MNIST Digit Classifier",
+					desc: "Deep neural network written from scratch in C implementing batch gradient descent and regularization. Achieved a 97.1% test set accuracy in classifying the MNIST image database of 10,000 handwritten digits.",
+					source: "https://github.com/vatsal0/mnist-digit-classifier",
 				},
 			]
 		}
