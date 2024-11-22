@@ -1,3 +1,5 @@
 [[redirects]]
   from="/"
   to="https://vatsal0.github.io/"
+  status = 301
+  force = true
